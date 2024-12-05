@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("img/blank-brown-notepaper-design-vector_53876-175008.avif");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+
+.navbar {
+    background-color: #cfcb80; /* Dark background for the navbar */
+    padding: 50px 20px;
+}
+
+.navdiv {
+    display: flex; /* Flexbox layout for easy alignment */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center;
+}
+
+
+.logo a {
+    font-size: 24px;
+    color: white; /* Logo text color */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none; /* Remove underline */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Display links in a row */
+    gap: 20px; /* Add spacing between links */
+}
+
+.nav-links li a {
+    color: white; /* Link color */
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    text-decoration: none; /* Remove underline */
+}
+
+.nav-links li a:hover {
+    background-color: #ececd2; /* Change background on hover */
+    border-radius: 5px;
+    color: #ddd; /* Slightly lighter text on hover */
+}
+
+/* Responsive Navbar (Optional) */
+ @media (max-width: 768px) {
+    .navdiv {
+        flex-direction: column; /* Stack logo and links vertically */
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        list-style: none;
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px;
+        margin-top: 10px;
+    }
+} 
+
+
+.container1 {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    gap: 20px; /* Add spacing between text and button */
+    background-color: rgb(17, 17, 125);
+    padding: 100px 50px;
+}
+
+
+h1{
+    color: rgb(255, 255, 255);
+
+}
+
+.container1 p {
+    font-size: 24px; /* Adjust font size for better readability */
+    color: rgb(255, 255, 255); /* Make text readable over background */
+    text-align: center; /* Center the text */
+}
+
+
+.product {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to fit on smaller screens */
+    justify-content: center;
+    gap: 20px; /* Space between items */
+    margin-top: 50px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center image and text */
+    width: 200px; /* Set a fixed width for consistency */
+    text-align: center; /* Center-align text below the image */
+}
+
+.service-item img {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    border-radius: 10px; /* Optional: Rounded corners */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.service-item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* Text color */
+}
+
+.service-item a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* Text color */
+}
+
+
+.btn {
+    padding: 10px 20px; /* Add padding for the button */
+    font-size: 16px; /* Adjust font size */
+    color: white; /* Button text color */
+    background-color: #1b8d10; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.btn:hover {
+    background-color: #ececd2; /* Change background color on hover */
+}
+
+.bodyhome{
+    display:flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    
+}
+
+.kirikanan{
+    display:flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.kiri{
+    width: 45%;
+}
+
+.kanan{
+    text-align: right;
+    width: 45%;
+}
+
+.bawah {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-container p {
+    margin: 5px 0;
+}
+
+.footer-container .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-container .social-icons a:hover {
+    text-decoration: underline;
+}
+
